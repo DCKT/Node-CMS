@@ -1,0 +1,16 @@
+- var SEO = { title: '', description: '' }
+
+block variables
+
+doctype html
+html(lang="fr")
+head
+  meta(charset="UTF-8")
+  title
+    = SEO.title
+    | - CMS
+  meta(type="description" content=SEO.description)
+  block stylesheets
+body
+  block content
+  block scripts
